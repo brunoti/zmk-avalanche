@@ -153,7 +153,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans       &trans        &trans         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_copy  &macro_paste  &kp LG(Z)      &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_copy  &macro_paste  &kp LG(Z)      &kp LG(A)          &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans       &trans        &trans         &trans             &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans        &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LG(SPACE)  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans       &trans        &trans         &trans
