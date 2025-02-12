@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
 
@@ -37,6 +37,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
+            flavor = "balanced";
         };
     };
 
@@ -167,6 +168,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp LS(LG(LEFT_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans                  &trans                  &trans                   &trans                   &trans  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans                  &trans                  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
