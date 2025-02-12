@@ -60,8 +60,15 @@
         macro_paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp V>;
+            bindings = <&kp LG(V)>;
             label = "PASTE";
+        };
+
+        macro_copy: macro_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "MACRO_COPY";
         };
     };
 
@@ -124,11 +131,11 @@
 
         SYMBOLS {
             bindings = <
-&trans           &trans     &trans             &trans      &trans         &trans                              &trans         &trans     &trans            &trans                &trans                 &trans
-&trans           &kp APOS   &kp DOUBLE_QUOTES  &kp ASTRK   &kp LESS_THAN  &kp GREATER_THAN                    &kp AMPERSAND  &kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PERCENT            &trans
-&macro_vim_save  &trans     &kp EXCLAMATION    &kp MINUS   &kp PLUS       &kp EQUAL         &kp HASH                         &kp PIPE   &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &trans       &trans
-&trans           &kp CARET  &kp COMMA          &kp PERIOD  &kp BACKSLASH  &kp GRAVE         &trans    &trans  &trans         &trans     &kp SLASH         &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp AT_SIGN  &trans
-                 &trans     &trans             &trans      &trans         &trans                              &trans         &trans     &trans            &trans                &trans
+&none            &none           &none              &none       &none          &none                              &none          &none      &none             &none                 &none                  &none
+&none            &kp APOS        &kp DOUBLE_QUOTES  &kp ASTRK   &kp LESS_THAN  &kp GREATER_THAN                   &kp AMPERSAND  &kp TILDE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PERCENT            &none
+&macro_vim_save  &kp UNDERSCORE  &kp EXCLAMATION    &kp MINUS   &kp PLUS       &kp EQUAL         &kp HASH                        &kp PIPE   &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &none        &none
+&none            &kp CARET       &kp COMMA          &kp PERIOD  &kp BACKSLASH  &kp GRAVE         &none     &none  &none          &none      &kp SLASH         &kp DOLLAR            &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp AT_SIGN  &none
+                 &none           &none              &none       &none          &none                              &none          &none      &none             &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -136,21 +143,21 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none                &none  &none        &none         &none          &none              &none
+&none  &none  &none  &none  &none  &none                &none  &macro_copy  &macro_paste  &none          &none              &none
+&none  &none  &none  &none  &none  &none  &none                &none        &none         &none          &none              &none          &none          &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none        &none         &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp LG(SPACE)  &none
+       &none  &none  &none  &none  &none                &none  &none        &none         &none          &none
             >;
         };
 
-        layer_5 {
+        r_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none                &none  &none         &none                   &none                   &none                    &none
+&none  &none  &none  &none  &none  &none                &none  &kp LS(LEFT)  &kp LS(RIGHT_ARROW)     &none                   &none                    &none
+&none  &none  &none  &none  &none  &none  &none                &none         &kp LS(LG(LEFT_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none         &none                   &none                   &none                    &none                    &none  &none
+       &none  &none  &none  &none  &none                &none  &none         &none                   &none                   &none
             >;
         };
     };
