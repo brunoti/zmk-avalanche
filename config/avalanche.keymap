@@ -200,21 +200,21 @@
 
         e_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans              &trans              &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT  &kp RIGHT_ARROW     &trans              &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp ENTER           &kp ENTER            &trans               &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans              &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans              &trans         &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT      &kp RIGHT_ARROW     &trans         &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT_ARROW)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans              &kp ENTER      &kp ENTER            &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans              &trans         &trans
             >;
         };
 
         r_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans         &trans             &trans             &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp BACKSPACE  &kp DELETE         &trans             &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans         &kp LG(BACKSPACE)  &kp LA(BACKSPACE)  &kp LA(DELETE)  &kp LG(DELETE)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans             &trans             &trans          &trans          &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans         &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans             &trans             &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp BACKSPACE      &kp DELETE         &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(BACKSPACE)  &kp LA(BACKSPACE)  &kp LA(DELETE)  &kp LG(DELETE)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans             &trans          &trans          &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans             &trans             &trans          &trans
             >;
         };
 
