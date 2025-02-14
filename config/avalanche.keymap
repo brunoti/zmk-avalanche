@@ -176,10 +176,10 @@
 
         super_layer {
             bindings = <
-&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans     &trans       &trans        &trans            &trans        &trans
-&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &kp LG(Q)  &macro_copy  &macro_paste  &kp LG(Z)         &kp LG(A)     &trans
-&trans  &trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &trans                     &kp LC(A)    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &trans  &trans
-&trans  &trans  &trans                        &trans                        &trans                        &trans                        &trans  &trans  &trans     &trans       &kp LC(C)     &kp LG(SPACE)     &trans        &trans   &trans  &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans     &trans       &trans        &trans            &trans         &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &kp LG(Q)  &macro_copy  &macro_paste  &kp LG(Z)         &kp LG(A)      &trans
+&trans  &trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &trans                     &kp LC(A)    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp TAB  &trans  &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                        &trans  &trans  &trans     &trans       &kp LC(C)     &kp LG(SPACE)     &kp LA(LC(X))  &trans   &trans  &trans
         &trans  &trans                        &trans                        &trans                        &trans                                        &trans     &trans       &trans        &trans            &trans
             >;
 
