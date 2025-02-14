@@ -89,6 +89,13 @@
             bindings = <&kp LG(C)>;
             label = "MACRO_COPY";
         };
+
+        macro_open_player: macro_open_player {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(S)>;
+            label = "MACRO_OPEN_PLAYER";
+        };
     };
 
     keymap {
@@ -217,6 +224,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp CARET         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &kp DOLLAR  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp UNDERSCORE        &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp MINUS   &trans  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans                &trans                 &trans
+            >;
+        };
+
+        player_layer {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp  &kp            &kp  &kp           &kp                &kp         &kp                 &kp
+&kp  &kp  &kp  &kp  &kp  &kp            &kp  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp                 &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp            &kp           &kp C_PREVIOUS     &kp C_NEXT  &kp C_PLAY_PAUSE    &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp           &kp                &kp LA(S)   &macro_open_player  &kp  &kp  &kp
+     &kp  &kp  &kp  &kp  &kp            &kp  &kp           &kp                &kp         &kp
             >;
         };
     };
