@@ -190,11 +190,11 @@
 
         w_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans                  &trans                  &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(LEFT)  &kp LS(RIGHT_ARROW)     &trans                  &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp LS(LG(LEFT_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans                  &trans                  &trans                   &trans                   &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans                  &trans                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans                  &trans             &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(LEFT)      &kp LS(RIGHT_ARROW)     &trans             &trans                   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(LS(LEFT))  &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT))  &kp LS(LG(RIGHT_ARROW))  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans                  &trans             &trans                   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans                  &trans             &trans
             >;
         };
 
