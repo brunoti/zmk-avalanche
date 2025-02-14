@@ -260,11 +260,11 @@
 
         a_layer {
             bindings = <
-&kp  &kp  &kp  &kp  &kp  &kp            &kp  &kp       &kp             &kp           &kp            &kp
-&kp  &kp  &kp  &kp  &kp  &kp            &kp  &kp TAB   &kp LS(TAB)     &kp           &kp            &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp            &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp BACKSPACE  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp             &kp ENTER     &kp LS(ENTER)  &kp            &kp  &kp
-     &kp  &kp  &kp  &kp  &kp            &kp  &kp       &kp             &kp           &kp
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans          &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp TAB   &kp LS(TAB)     &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp BACKSPACE  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp ENTER     &kp LS(ENTER)  &trans         &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans          &trans        &trans
             >;
         };
     };
