@@ -222,8 +222,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans            &trans             &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp SLASH  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE      &kp BACKSLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &kp EXCLAMATION   &kp COMMA          &kp PERIOD     &kp COLON      &kp QUESTION  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &kp PIPE           &kp SEMICOLON  &kp AMPERSAND  &kp TILDE     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &kp EXCLAMATION   &kp COMMA          &kp PERIOD     &kp COLON      &kp QUESTION  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &kp PIPE           &kp SEMICOLON  &kp AMPERSAND  &kp TILDE     &kp AT_SIGN  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans     &trans            &trans             &trans         &trans
             >;
         };
@@ -245,6 +245,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp C_PREVIOUS     &kp C_NEXT  &kp C_PLAY_PAUSE    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans             &kp LA(S)   &macro_open_player  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans             &trans      &trans
+            >;
+        };
+
+        d_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans         &trans            &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp HASH      &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans         &kp PLUS          &kp MINUS     &kp EQUAL  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans            &kp ASTERISK  &kp SLASH  &kp PERCENT  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans         &trans            &trans        &trans
             >;
         };
     };
