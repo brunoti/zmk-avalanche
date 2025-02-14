@@ -96,6 +96,13 @@
             bindings = <&kp LA(S)>;
             label = "MACRO_OPEN_PLAYER";
         };
+
+        macro_pipe: macro_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp GREATER_THAN>;
+            label = "MACRO_PIPE";
+        };
     };
 
     keymap {
@@ -225,8 +232,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans                &trans                 &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp EXCLAMATION        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp CARET         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &kp DOLLAR  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp UNDERSCORE        &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp MINUS   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &kp CARET         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION     &kp DOLLAR  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp UNDERSCORE        &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp MINUS   &kp UNDERSCORE  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans                &trans                 &trans
             >;
         };
