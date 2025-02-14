@@ -169,12 +169,16 @@
 
         super_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans       &trans        &trans         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(Q)  &macro_copy  &macro_paste  &kp LG(Z)      &kp LG(A)          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &kp LC(A)    &trans        &trans         &trans             &trans         &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans       &trans        &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp TAB  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans     &trans       &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans       &trans        &trans            &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LG(Q)  &macro_copy  &macro_paste  &kp LG(Z)         &kp LG(A)     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &kp LC(A)    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp TAB  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans       &kp LC(C)     &trans            &trans        &trans   &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans     &trans       &trans        &trans            &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         w_layer {
