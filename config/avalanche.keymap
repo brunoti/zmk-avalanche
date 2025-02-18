@@ -215,7 +215,7 @@
         super_layer {
             bindings = <
 &trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &trans       &trans        &trans         &trans         &trans
-&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &macro_copy  &macro_paste  &trans         &trans         &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &macro_copy  &macro_paste  &macro_cut     &trans         &trans
 &trans  &trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &trans                  &kp LC(A)    &kp LG(A)     &kp LG(Z)      &trans         &trans     &trans  &trans
 &trans  &trans  &trans                        &trans                        &trans                        &trans                        &trans  &trans  &trans  &trans       &kp LC(C)     &kp LG(SPACE)  &kp LA(LC(X))  &kp LG(X)  &trans  &trans
         &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &trans       &trans        &trans         &trans
