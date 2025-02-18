@@ -113,6 +113,34 @@
             bindings = <&kp LC(W) &kp W>;
             label = "MACRO_VIM_CYLE_WIN";
         };
+
+        macro_tmux_super: macro_tmux_super {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>;
+            label = "MACRO_TMUX_SUPER";
+        };
+
+        macro_tmux_next_tab: macro_tmux_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tmux_super &kp N>;
+            label = "MACRO_TMUX_NEXT_TAB";
+        };
+
+        macro_tmux_prev_tab: macro_tmux_prev_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tmux_super &kp P>;
+            label = "MACRO_TMUX_PREV_TAB";
+        };
+
+        macro_cut: macro_cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+            label = "MACRO_CUT";
+        };
     };
 
     keymap {
