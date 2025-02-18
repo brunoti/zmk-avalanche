@@ -128,11 +128,11 @@
             // ---------------------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp GRAVE     &kp N1                &kp N2            &kp N3               &kp N4                  &kp N5                                        &kp N6   &kp N7                  &kp N8                    &kp N9  &kp N0            &kp SQT
-&kp TAB       &kp Q                 &layer_plus 5 W   &layer_plus 6 E      &layer_plus 7 R         &kp T                                         &kp Y    &kp U                   &kp I                     &kp O   &layer_plus 10 P  &kp MINUS
-&kp LEFT_ALT  &hm LEFT_CONTROL ESC  &layer_plus 12 A  &layer_plus 8 S      &layer_plus 11 D        &layer_plus 9 F      &layer_plus 14 G                  &kp H                   &kp J                     &kp K   &kp L             &bhm LEFT_SHIFT SEMICOLON  &hm RIGHT_CONTROL EQUAL  &kp LEFT_GUI
-&kp LEFT_GUI  &kp Z                 &kp X             &kp C                &layer_plus 13 V        &kp B                &kp DELETE        &mo 2  &mo 1    &kp BACKSPACE           &kp N                     &kp M   &kp COMMA         &kp PERIOD                 &bhm RIGHT_ALT SLASH     &mo 2
-              &kp C_PREVIOUS        &mo 4             &bhm LEFT_GUI SPACE  &bhm LEFT_SHIFT ESCAPE  &layer_plus 2 ENTER                           &kp TAB  &bhm RIGHT_SHIFT ENTER  &bhm RIGHT_CONTROL SPACE  &mo 4   &kp C_NEXT
+&kp GRAVE     &kp N1                &kp N2            &kp N3               &kp N4            &kp N5                                        &kp N6     &kp N7         &kp N8                    &kp N9  &kp N0            &kp SQT
+&kp TAB       &kp Q                 &layer_plus 5 W   &layer_plus 6 E      &layer_plus 7 R   &kp T                                         &kp Y      &kp U          &kp I                     &kp O   &layer_plus 10 P  &kp MINUS
+&kp LEFT_ALT  &hm LEFT_CONTROL ESC  &layer_plus 12 A  &layer_plus 8 S      &layer_plus 11 D  &layer_plus 9 F      &layer_plus 14 G                    &kp H          &kp J                     &kp K   &kp L             &bhm LEFT_SHIFT SEMICOLON  &hm RIGHT_CONTROL EQUAL  &kp LEFT_GUI
+&kp LEFT_GUI  &kp Z                 &kp X             &kp C                &layer_plus 13 V  &kp B                &kp DELETE        &mo 2  &mo 1      &kp BACKSPACE  &kp N                     &kp M   &kp COMMA         &kp PERIOD                 &bhm RIGHT_ALT SLASH     &mo 2
+              &kp C_PREVIOUS        &mo 4             &bhm LEFT_GUI SPACE  &kp LEFT_SHIFT    &layer_plus 2 ENTER                           &kp ENTER  &kp RIGHT_GUI  &bhm RIGHT_CONTROL SPACE  &mo 4   &kp C_NEXT
             >;
 
             sensor-bindings =
@@ -186,11 +186,11 @@
 
         super_layer {
             bindings = <
-&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans     &trans       &trans        &trans            &trans         &trans
-&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &kp LG(Q)  &macro_copy  &macro_paste  &kp LG(Z)         &kp LG(A)      &trans
-&trans  &trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &trans                     &kp LC(A)    &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp TAB    &trans  &trans
-&trans  &trans  &trans                        &trans                        &trans                        &trans                        &trans  &trans  &trans     &trans       &kp LC(C)     &kp LG(SPACE)     &kp LA(LC(X))  &kp LG(X)  &trans  &trans
-        &trans  &trans                        &trans                        &trans                        &trans                                        &trans     &trans       &trans        &trans            &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &trans       &trans        &trans         &trans         &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &macro_copy  &macro_paste  &trans         &trans         &trans
+&trans  &trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &trans                  &kp LC(A)    &kp LG(A)     &kp LG(Z)      &trans         &trans     &trans  &trans
+&trans  &trans  &trans                        &trans                        &trans                        &trans                        &trans  &trans  &trans  &trans       &kp LC(C)     &kp LG(SPACE)  &kp LA(LC(X))  &kp LG(X)  &trans  &trans
+        &trans  &trans                        &trans                        &trans                        &trans                                        &trans  &trans       &trans        &trans         &trans
             >;
 
             sensor-bindings =
