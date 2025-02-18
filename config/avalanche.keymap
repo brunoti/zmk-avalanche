@@ -106,6 +106,13 @@
             bindings = <&kp PIPE &kp GREATER_THAN>;
             label = "MACRO_PIPE";
         };
+
+        macro_vim_cyle_win: macro_vim_cyle_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W) &kp W>;
+            label = "MACRO_VIM_CYLE_WIN";
+        };
     };
 
     keymap {
@@ -273,11 +280,11 @@
 
         vim_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp COLON  &kp SLASH  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans               &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_vim_save  &macro_vim_cyle_win  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans           &kp COLON            &kp SLASH  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans               &trans     &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans               &trans     &trans
             >;
         };
 
