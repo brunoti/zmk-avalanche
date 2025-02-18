@@ -177,6 +177,24 @@
             bindings = <&macro_tmux_super &kp ESC>;
             label = "MACRO_TMUX_VISUAL";
         };
+
+        macro_vim_quit: macro_vim_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp ESCAPE &kp COLON &kp Q &kp ENTER>;
+            label = "MACRO_VIM_QUIT";
+        };
+
+        macro_vim_wq: macro_vim_wq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp Q &kp ENTER>;
+            label = "MACRO_VIM_WQ";
+        };
     };
 
     keymap {
@@ -344,11 +362,11 @@
 
         vim_layer {
             bindings = <
-&trans  &trans           &trans               &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &macro_vim_save  &macro_vim_cyle_win  &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &kp COLON            &kp SLASH  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans               &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans           &trans               &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans               &trans         &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &macro_vim_save  &macro_vim_cyle_win  &macro_vim_wq  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &kp COLON            &kp SLASH      &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans               &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans           &trans               &trans         &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
