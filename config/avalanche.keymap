@@ -412,10 +412,10 @@
 
         term_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_tmux_prev_tab  &macro_tmux_next_tab  &macro_tmux_cycle       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &macro_tmux_visual    &macro_tmux_kill        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                &macro_previous_folder  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans                  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_tmux_prev_tab  &macro_tmux_next_tab  &macro_tmux_cycle       &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &macro_tmux_visual    &macro_tmux_kill        &macro_tmux_focus  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                &macro_previous_folder  &trans             &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans                  &trans
             >;
         };
