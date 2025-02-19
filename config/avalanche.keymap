@@ -205,6 +205,13 @@
             bindings = <&kp DOT &kp FSLH>;
             label = "MACRO_CURRENT_FOLDER";
         };
+
+        macro_tmux_focus: macro_tmux_focus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tmux_super &kp Z>;
+            label = "MACRO_TMUX_FOCUS";
+        };
     };
 
     combos {
