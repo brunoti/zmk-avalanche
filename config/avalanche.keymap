@@ -436,11 +436,11 @@
 
         alternative_arrows {
             bindings = <
-&trans  &trans  &trans          &trans     &trans  &trans                  &trans  &trans        &trans    &trans  &trans  &trans
-&trans  &trans  &trans          &trans     &trans  &trans                  &trans  &trans        &trans    &trans  &trans  &trans
-&trans  &trans  &trans          &trans     &trans  &trans  &trans                  &trans        &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &kp LEFT_ARROW  &kp RIGHT  &trans  &trans                  &trans  &kp UP_ARROW  &kp DOWN  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans                  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans                  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans  &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp LEFT  &kp RIGHT  &trans                  &trans  &kp DOWN  &kp UP  &trans  &trans
             >;
         };
 
