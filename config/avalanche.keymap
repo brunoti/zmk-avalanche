@@ -196,6 +196,24 @@
             bindings = <&kp ESCAPE &kp COLON &kp W &kp Q &kp ENTER>;
             label = "MACRO_VIM_WQ";
         };
+
+        macro_current_folder: macro_current_folder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp DOT &kp FSLH>;
+            label = "MACRO_CURRENT_FOLDER";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        reset_layers {
+            bindings = <&to 0>;
+            key-positions = <2 3>;
+        };
     };
 
     keymap {
@@ -387,11 +405,11 @@
 
         term_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_tmux_prev_tab  &macro_tmux_next_tab  &macro_tmux_cycle  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &macro_tmux_visual    &macro_tmux_kill   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                &trans             &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans                  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &macro_tmux_prev_tab  &macro_tmux_next_tab  &macro_tmux_cycle       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                &macro_tmux_visual    &macro_tmux_kill        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans                &macro_previous_folder  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans                &trans                &trans                  &trans
             >;
         };
 
