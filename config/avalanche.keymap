@@ -446,11 +446,11 @@
 
         extended {
             bindings = <
-&kp        &kp            &kp               &kp                   &kp                    &kp                            &kp  &kp       &kp          &kp        &kp            &kp
-&kp TILDE  &kp LESS_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp GREATER_THAN       &kp                            &kp  &kp TAB   &kp LS(TAB)  &kp        &kp            &kp
-&kp        &kp PIPE       &kp UNDERSCORE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp AMPERSAND            &kp LEFT  &kp DOWN     &kp UP     &kp RIGHT      &kp BACKSPACE  &kp  &kp
-&kp SLASH  &kp AT         &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp COLON              &kp        &kp            &kp  &kp  &kp       &kp          &kp ENTER  &kp LS(ENTER)  &kp            &kp  &kp
-           &kp            &kp               &kp                   &kp                    &kp                            &kp  &kp       &kp          &kp        &kp
+&trans     &trans         &trans            &trans                &trans                 &trans                            &trans  &trans    &trans       &trans     &trans         &trans
+&kp TILDE  &kp LESS_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp GREATER_THAN       &trans                            &trans  &kp TAB   &kp LS(TAB)  &trans     &trans         &trans
+&trans     &kp PIPE       &kp UNDERSCORE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp AMPERSAND                  &kp LEFT  &kp DOWN     &kp UP     &kp RIGHT      &kp BACKSPACE  &trans  &trans
+&kp SLASH  &kp AT         &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp COLON              &trans     &trans         &trans  &trans  &trans    &trans       &kp ENTER  &kp LS(ENTER)  &trans         &trans  &trans
+           &trans         &trans            &trans                &trans                 &trans                            &trans  &trans    &trans       &trans     &trans
             >;
         };
     };
