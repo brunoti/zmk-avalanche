@@ -439,11 +439,11 @@
 
         extended {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans     &trans         &trans            &trans                &trans                 &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp LESS_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp GREATER_THAN       &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp PIPE       &kp UNDERSCORE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp AMPERSAND                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SLASH  &kp AT         &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp COLON              &trans     &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+           &trans         &trans            &trans                &trans                 &trans                            &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
