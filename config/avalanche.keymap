@@ -333,8 +333,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans            &trans             &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp SLASH  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE      &kp BACKSLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &kp EXCLAMATION   &kp COMMA          &kp PERIOD     &kp COLON      &kp QUESTION  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &kp PIPE           &kp SEMICOLON  &kp AMPERSAND  &kp TILDE     &kp AT_SIGN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &kp PIPE          &kp COMMA          &kp PERIOD     &kp COLON      &kp QUESTION  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &macro_pipe        &kp SEMICOLON  &kp AMPERSAND  &kp TILDE     &kp AT_SIGN  &trans
         &trans  &trans  &trans  &trans  &trans                  &trans     &trans            &trans             &trans         &trans
             >;
         };
