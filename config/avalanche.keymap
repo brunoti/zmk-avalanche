@@ -358,11 +358,11 @@
 
         player_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans             &trans      &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &kp K_MUTE  &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp C_PREVIOUS     &kp C_NEXT  &kp C_PLAY_PAUSE    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans             &kp LA(S)   &macro_open_player  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans             &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans           &trans      &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE  &trans              &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &kp C_PREVIOUS   &kp C_NEXT  &kp C_PLAY_PAUSE    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans           &kp LA(S)   &macro_open_player  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans        &trans           &trans      &trans
             >;
         };
 
