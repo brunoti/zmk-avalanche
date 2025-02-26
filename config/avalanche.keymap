@@ -236,11 +236,11 @@
             // ---------------------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&kp GRAVE     &kp N1                &kp N2                &kp N3               &kp N4                &kp N5                                               &kp N6                   &kp N7           &kp N8                    &kp N9  &kp N0                &kp SQT
-&kp TAB       &kp Q                 &layer_plus_new 5 W   &layer_plus_new 6 E  &layer_plus_new 7 R   &kp T                                                &kp Y                    &kp U            &kp I                     &kp O   &layer_plus_new 10 P  &kp MINUS
-&kp LEFT_ALT  &hm LEFT_CONTROL ESC  &layer_plus_new 12 A  &layer_plus_new 8 S  &layer_plus_new 11 D  &layer_plus_new 9 F       &layer_plus 14 G                                    &kp H            &kp J                     &kp K   &kp L                 &hm LEFT_SHIFT SEMICOLON  &hm RIGHT_CONTROL EQUAL  &kp LEFT_GUI
-&kp LEFT_GUI  &kp Z                 &layer_plus_new 15 X  &kp C                &layer_plus_new 15 V  &kp B                     &tog 17           &tog 16  &mo 1                    &kp BACKSPACE    &kp N                     &kp M   &kp COMMA             &kp PERIOD                &hm RIGHT_ALT SLASH      &mo 2
-              &kp C_PREVIOUS        &mo 4                 &bhm LEFT_GUI SPACE  &kp LEFT_SHIFT        &layer_plus_new 18 ENTER                             &layer_plus_new 2 ENTER  &kp RIGHT_SHIFT  &bhm RIGHT_CONTROL SPACE  &mo 19  &kp C_NEXT
+&kp GRAVE     &kp N1                &kp N2                &kp N3               &kp N4                &kp N5                                               &kp N6                    &kp N7           &kp N8                    &kp N9  &kp N0                &kp SQT
+&kp TAB       &kp Q                 &layer_plus_new 5 W   &layer_plus_new 6 E  &layer_plus_new 7 R   &kp T                                                &kp Y                     &kp U            &kp I                     &kp O   &layer_plus_new 10 P  &kp MINUS
+&kp LEFT_ALT  &hm LEFT_CONTROL ESC  &layer_plus_new 12 A  &layer_plus_new 8 S  &layer_plus_new 11 D  &layer_plus_new 9 F       &layer_plus 14 G                                     &kp H            &kp J                     &kp K   &kp L                 &hm LEFT_SHIFT SEMICOLON  &hm RIGHT_CONTROL EQUAL  &kp LEFT_GUI
+&kp LEFT_GUI  &kp Z                 &layer_plus_new 15 X  &kp C                &layer_plus_new 15 V  &kp B                     &tog 17           &tog 16  &mo 1                     &kp BACKSPACE    &kp N                     &kp M   &kp COMMA             &kp PERIOD                &hm RIGHT_ALT SLASH      &mo 2
+              &kp C_PREVIOUS        &mo 4                 &bhm LEFT_GUI SPACE  &kp LEFT_SHIFT        &layer_plus_new 18 ENTER                             &layer_plus_new 19 ENTER  &kp RIGHT_SHIFT  &bhm RIGHT_CONTROL SPACE  &mo 19  &kp C_NEXT
             >;
 
             sensor-bindings =
