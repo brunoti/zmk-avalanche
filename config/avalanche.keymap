@@ -210,6 +210,20 @@
             bindings = <&macro_tmux_super &kp Z>;
             label = "MACRO_TMUX_FOCUS";
         };
+
+        macro_cmd_ctrl: macro_cmd_ctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LCMD>;
+            label = "MACRO_CMD_CTRL";
+        };
+
+        macro_shift_alt: macro_shift_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT>;
+            label = "MACRO_SHIFT_ALT";
+        };
     };
 
     combos {
@@ -218,6 +232,16 @@
         reset_layers {
             bindings = <&to 0>;
             key-positions = <2 3>;
+        };
+
+        cmd_ctrl {
+            bindings = <&macro_cmd_ctrl>;
+            key-positions = <56 61>;
+        };
+
+        shift_alt {
+            bindings = <&macro_shift_alt>;
+            key-positions = <57 60>;
         };
     };
 
