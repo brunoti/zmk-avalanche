@@ -68,6 +68,15 @@
     };
 
     macros {
+        macro_minerva_pass: minerva_pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp N2 &kp D &kp M &kp K &kp N2 &kp R &kp N9 &kp LS(N3)>;
+            label = "MINERVA_PASS";
+        };
+
         macro_vim_save: vim_save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
